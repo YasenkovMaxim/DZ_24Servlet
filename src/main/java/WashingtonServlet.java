@@ -14,8 +14,8 @@ public class WashingtonServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/plain;charset=UTF-8");
-        ZoneId beiljingTimeZone = ZoneId.of("Asia/Shanghai");
-        ZonedDateTime zonedDateTime = ZonedDateTime.now(beiljingTimeZone);
+        ZoneId beijingTimeZone = ZoneId.of("Asia/Shanghai");
+        ZonedDateTime zonedDateTime = ZonedDateTime.now(beijingTimeZone);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         Writer w = resp.getWriter();
         w.write("Текущее время в Пекине: " + zonedDateTime.format(formatter));
