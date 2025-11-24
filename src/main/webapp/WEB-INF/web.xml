@@ -4,4 +4,12 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>Washington-serv</servlet-name>
+        <servlet-class>WashingtonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Washington-serv</servlet-name>
+        <url-pattern>/washington</url-pattern>
+    </servlet-mapping>
 </web-app>
